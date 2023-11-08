@@ -128,3 +128,9 @@ body {
     font-family: "Lobster", cursive;
     font-size: 1.5em;
 }
+
+.div-nav--cabecera:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    color:#FF5733;
+}

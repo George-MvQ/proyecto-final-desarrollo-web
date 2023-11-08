@@ -23,7 +23,11 @@
             <h1>{{proyecto}}</h1>
             <section id="contenedor">
                 <div class="contenedor__video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NFMvmvKHdYU?si=x5U5FntRkYN-IqAL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="700" height="400"
+                        src="https://www.youtube.com/embed/doHWY7bp4tg?si=HFTWXXbcuAqtxBAU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
                 <section class="section__descripcion">
                     <button class="subtitulo"><span></span>DESCRIPCION</button>
@@ -37,97 +41,94 @@
                             funcionalidades, las cuales son:
                         </p>
 
-                        <ol>
+                        <ul>
                             <li>
-                                <ul>
-                                    <li>
-                                        <h4>Comprovar la conexion a la base de
-                                            datos (ejercicio 78): </h4>
-                                        <p>
-                                            El ejercicio debe comenzar
-                                            estableciendo una conexión con la
-                                            base
-                                            de datos MongoDB utilizando Node.js
-                                            y la biblioteca oficial de
-                                            MongoDB, como mongoose. Esto implica
-                                            configurar la conexión con la
-                                            URL de la base de datos y manejar
-                                            los eventos de conexión y error
-                                            para verificar que la conexión se
-                                            establece correctamente.
-                                        </p>
-                                    </li>
-
-                                    <li>
-                                        <h4>Inserción de datos en la colección
-                                            (Ejercicio 79):</h4>
-                                        <p>
-                                            Se implementa la funcionalidad para
-                                            insertar datos en la colección
-                                            "usuarios" de MongoDB. Esto se logra
-                                            mediante una ruta de API que acepta
-                                            solicitudes HTTP POST. Los datos a
-                                            insertar se envían en el cuerpo
-                                            (body) de
-                                            la solicitud, en formato JSON. Esta
-                                            insercion se realiza mediante la
-                                            herramienta
-                                            Thunder que nos permite realizar
-                                            solicitudes de prueba a esta ruta.
-                                        </p>
-                                    </li>
-
-                                    <li>
-                                        <h4>Encriptación de contraseña y lógica
-                                            de validación de campos: (Ejercicio
-                                            710) </h4>
-                                        <p>
-                                            En este apartado se implementa
-                                            validaciones antes de insertar los
-                                            datos del usuario en la colección,
-                                            por lo que se debe implementar la
-                                            lógica de encriptación de la
-                                            contraseña del usuario. Esto implica
-                                            utilizar una
-                                            biblioteca de encriptación, como
-                                            "bcrypt", para almacenar las
-                                            contraseñas de manera
-                                            segura en la base de datos. Además,
-                                            se debe realizar la validación de
-                                            los campos del
-                                            usuario, como el nombre de usuario,
-                                            el correo electrónico, etc., para
-                                            garantizar que
-                                            los datos sean correctos antes de la
-                                            inserción.
-                                        </p>
-                                    </li>
-
-                                    <li>
-                                        <h4> Creacion de una colocciones - roles
-                                            (Ejericicio 711): </h4>
-                                        <p>
-                                            Para esta seccion se crea una
-                                            colección llamada "ROLES" en la base
-                                            de datos
-                                            MongoDB. Esto se realiza utilizando
-                                            el mismo código de Node.js
-                                            que se utiliza para establecer la
-                                            conexión a la base de datos. La
-                                            colección "ROLES" contendrá
-                                            información sobre los roles de
-                                            usuario,
-                                            como "administrador",
-                                            "usuario estándar", etc. Cuando se
-                                            crea un nuevo
-                                            usuario, se asigna un rol basado en
-                                            esta colección.
-                                        </p>
-                                    </li>
-
-                                </ul>
+                                <h4>Comprovar la conexion a la base de
+                                    datos (ejercicio 78): </h4>
+                                <p>
+                                    El ejercicio debe comenzar
+                                    estableciendo una conexión con la
+                                    base
+                                    de datos MongoDB utilizando Node.js
+                                    y la biblioteca oficial de
+                                    MongoDB, como mongoose. Esto implica
+                                    configurar la conexión con la
+                                    URL de la base de datos y manejar
+                                    los eventos de conexión y error
+                                    para verificar que la conexión se
+                                    establece correctamente.
+                                </p>
                             </li>
-                        </ol>
+
+                            <li>
+                                <h4>Inserción de datos en la colección
+                                    (Ejercicio 79):</h4>
+                                <p>
+                                    Se implementa la funcionalidad para
+                                    insertar datos en la colección
+                                    "usuarios" de MongoDB. Esto se logra
+                                    mediante una ruta de API que acepta
+                                    solicitudes HTTP POST. Los datos a
+                                    insertar se envían en el cuerpo
+                                    (body) de
+                                    la solicitud, en formato JSON. Esta
+                                    insercion se realiza mediante la
+                                    herramienta
+                                    Thunder que nos permite realizar
+                                    solicitudes de prueba a esta ruta.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Encriptación de contraseña y lógica
+                                    de validación de campos: (Ejercicio
+                                    710) </h4>
+                                <p>
+                                    En este apartado se implementa
+                                    validaciones antes de insertar los
+                                    datos del usuario en la colección,
+                                    por lo que se debe implementar la
+                                    lógica de encriptación de la
+                                    contraseña del usuario. Esto implica
+                                    utilizar una
+                                    biblioteca de encriptación, como
+                                    "bcrypt", para almacenar las
+                                    contraseñas de manera
+                                    segura en la base de datos. Además,
+                                    se debe realizar la validación de
+                                    los campos del
+                                    usuario, como el nombre de usuario,
+                                    el correo electrónico, etc., para
+                                    garantizar que
+                                    los datos sean correctos antes de la
+                                    inserción.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4> Creacion de una colocciones - roles
+                                    (Ejericicio 711): </h4>
+                                <p>
+                                    Para esta seccion se crea una
+                                    colección llamada "ROLES" en la base
+                                    de datos
+                                    MongoDB. Esto se realiza utilizando
+                                    el mismo código de Node.js
+                                    que se utiliza para establecer la
+                                    conexión a la base de datos. La
+                                    colección "ROLES" contendrá
+                                    información sobre los roles de
+                                    usuario,
+                                    como "administrador",
+                                    "usuario estándar", etc. Cuando se
+                                    crea un nuevo
+                                    usuario, se asigna un rol basado en
+                                    esta colección.
+                                </p>
+                            </li>
+
+                        </ul>
+
                     </div>
                 </section>
 
