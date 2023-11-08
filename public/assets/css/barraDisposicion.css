@@ -1,0 +1,130 @@
+/*reglas que se aplican al cuerpo de nuetra pagina*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,600,700,800');
+body {
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    background: rgb(12, 12, 12);
+   /*  background: linear-gradient(to right, rgb(32, 33, 35), rgb(52, 54, 57)); */
+   background: linear-gradient(to right,rgb(15, 15, 15) , rgb(35, 35, 35));
+    display: grid;
+    min-height: 100vh; 
+    grid-template-rows: 4em 1fr auto;
+}
+
+
+.cabecera {
+    background-color: black;
+    padding-top: 15px;
+}
+
+.menu-nav{
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center ;
+    text-align: center;
+}
+.menu-nav_div1{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    align-items:center;
+    padding-left:20px;
+    padding-right: 20px;
+    
+}
+.nav-div-boton_munu{
+    padding-left:25%;
+}
+.cabecera nav ul{
+    list-style: none;
+ }   
+ 
+.cabecera nav li{
+    display: inline-block;
+    padding: 10px 60px;
+    text-decoration: none;
+   }
+   
+   .cabecera nav ul li:hover{
+   transform: scale(1.2);
+   }
+   
+   .cabecera nav ul li a:hover{
+       color: #FFFFFF
+       
+   }
+   
+   header nav a{
+       font-size: 700;
+       color: #ECECC2;
+       text-decoration: none;
+   }
+
+   
+
+
+   /*footore*/
+.pie{
+    padding-top: 25px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+#menu {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s;
+}
+
+#menu-lista{
+    list-style: none; /* Esto quita el punto de la lista */
+     padding: 0;
+}
+
+#menu-lista li {
+    margin-bottom: 2rem; /* Agrega espacio entre los elementos de la lista */
+
+}
+
+#menu-lista li a{
+    text-decoration: none; /* Esto quita el subrayado de los enlaces */
+    color: wheat;/* Agrega espacio entre los elementos de la lista */
+    font-size: 1.5em;
+}
+
+#menu-lateral{
+    background-color: #282727f6;
+    width: 25%;
+    border: 1px solid 
+}
+
+
+.menu-nav_div1 div::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px; /* Alto del subrayado */
+    background: linear-gradient(90deg, #FF5733, transparent); /* Gradiente de subrayado */
+    transition: width 0.5s ease; /* Transición de llenado */
+}
+
+.div__mi-nombre {
+    font-family: "Lobster", cursive;
+    font-size: 1.5em;
+}

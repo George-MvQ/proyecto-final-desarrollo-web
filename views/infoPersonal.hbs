@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" href="assets/css/barraDisposicion.css">
+        <link rel="stylesheet" href="assets/css/estilo_inforPersonal.css">
+        <title>Informacio personal</title>
+    </head>
+
+    <body>
+        {{>header}}
+        {{>navbar}}
+        <div>
+            <h1>GEORGE MOISES VASQUEZ QUICHE</h1>
+        </div>
+
+        <article class="seccion__principal">
+            <section class="contenedor__principal--seccion1">
+                <section class="seccion1__perfil--img">
+                    <div class="seccion1_contenedor2--img">
+                        <img class="img1" src="images/perfil1.jpg" alt><br>
+                    </div>
+
+                    <div>
+                        <a href="recursos/curriculum.pdf"
+                            download="Curruculum vt.pdf">
+                            <button class="boton1">DESCARGAR CV</button>
+                        </a>
+                    </div>
+
+                </section>
+
+                <section class="seccion1__info--personal">
+                    <div class="seccion1__perfil">
+                        <button class="subtitulo"><span></span>PERFIL PERSONAL</button>
+                        <div class="infoAdicional" id="informacionAdicional1">
+                            <p>
+                                Estudiante del octavo semestre de la carrera de
+                                ingenieria en sistemas y
+                                ciencias de la coputacion, con conocimientos en
+                                mantenimiento preventivo y
+                                correctivo de hardware y softwar y conocimientos
+                                sobre herramientas de Microsoft office
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="seccion1__infoAcademica">
+                        <button class="subtitulo"><span></span>FORMACION
+                            ACADEMICA</button>
+                        <div class="infoAdicional">
+                            <ul>
+                                <li>
+                                    <p>
+                                        LICENCIATURA EN INGENIERIA EN SISTEMAS Y
+                                        CIENCIAS DE LA COMPUTACION
+                                    </p>
+                                    <p>Universidad Mariano Galvez</p>
+                                    <p>(2020-Actualmente)</p>
+
+                                </li>
+
+                                <li>
+                                    <p>
+                                        BACHILLERATO EN CIENCIAS Y LETRAS CON
+                                        ORIENTACION EN COMPUTACION
+
+                                    </p>
+                                    <p>Colegio Cientifico Montessori, Sololá
+                                    </p>
+                                    <p>(2017-2017)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {{!-- <div class="seccion1__conocimiento">
+                        <button class="subtitulo"><span></span>CONOCIMIENTOS</button>
+                        <div class="infoAdicional">
+                            <ul>
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>JavaScript</li>
+                                <li>C#</li>
+                                <li>SQL Server</li>
+                                <li>HTML y CSS</li>
+                            </ul>
+                        </div>
+                    </div> --}}
+
+                    <div class="seccion1__habilidades">
+                        <button class="subtitulo"><span></span>HABILIDADES</button>
+                        <div class="infoAdicional">
+                            <ul>
+                                <li>Pro activo</li>
+                                <li>Capacidad de trabajo en equipo</li>
+                                <li>Mente Abierta</li>
+                                <li>Resolucion de problemas</li>
+                                <li>Capacidad de adaptacion</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="seccion1_contenedor2">
+                {{!-- <div class="seccion1_contenedor2--img">
+                    <img class="img1" src="images/perfil1.jpg" alt><br>
+                    <a href="recursos/curriculum.pdf"
+                        download="Curruculum vt.pdf">
+                        <button class="boton1">DESCARGAR CV</button>
+                    </a>
+                </div>
+                --}}
+
+                <article class="article--habilidades">
+                    <h4>Habilidades tecnologicas</h4>
+                    <br>
+                    <div class="contenedor__habilidades">
+                        <div class="div__area__habilidades">
+                            <h4>Frontend</h4>
+                            <hr>
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">HTML</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 70%;" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100">70%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">CSS</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 60%;" aria-valuenow="60"
+                                        aria-valuemin="0" aria-valuemax="100">60%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">JavaScript</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 75%;" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100">75%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">Bootstrap</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 45%;" aria-valuenow="45"
+                                        aria-valuemin="0" aria-valuemax="100">45%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="div__area__habilidades">
+                            <h4>Backend</h4>
+                            <hr>
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">NodeJs</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 45%;" aria-valuenow="45"
+                                        aria-valuemin="0" aria-valuemax="100">45%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">Express</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 35%;" aria-valuenow="35"
+                                        aria-valuemin="0" aria-valuemax="100">35%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">Django</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 75%;" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100">75%
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="div__area__habilidades">
+                            <h4>Base de datos</h4>
+                            <hr>
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">SQL server</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 65%;" aria-valuenow="65"
+                                        aria-valuemin="0" aria-valuemax="100">65%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">MongodB</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 35%;" aria-valuenow="35"
+                                        aria-valuemin="0" aria-valuemax="100">35%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="div__area__habilidades">
+                            <h4>Programacion de sistemas</h4>
+                            <hr>
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">C#</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 60%;" aria-valuenow="60"
+                                        aria-valuemin="0" aria-valuemax="100">60%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">C++</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 55%;" aria-valuenow="55"
+                                        aria-valuemin="0" aria-valuemax="100">55%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">Java</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 45%;" aria-valuenow="45"
+                                        aria-valuemin="0" aria-valuemax="100">45%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="div__area__habilidades">
+                            <h4>Sistemas operativos</h4>
+                            <hr>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">Windows</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 85%;" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100">85%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">Linux</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 50%;" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100">50%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="div__item__habilidad">
+                                <p class="habilidad__tecnologica">macOS</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info"
+                                        role="progressbar"
+                                        style="width: 25%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100">25%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </article>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous">
+        </script>
+        <script src="assets/js/despliegue.js"></script>
+        {{>footer}}
+
+    </body>
+
+</html>

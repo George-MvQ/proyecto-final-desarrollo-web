@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/barraDisposicion.css">
+    <link rel="stylesheet" href="assets/css/estiloProyectos.css">
+    <script src="assets/js/despliegue.js"></script>
+    <title>{{titulo}}</title>
+</head>
+
+<body>
+    {{>header}}
+    {{>navbar}}
+
+    <article class="articulo">
+        <h1>{{proyecto}}</h1>
+        <section id="contenedor">
+            <div class="contenedor__video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/INFsSd2iU9M?si=lUbRaE_LHZQJaRn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <section class="section__descripcion">
+                <button class="subtitulo"><span></span>DESCRIPCION</button>
+
+                <div class="infoAdicional">
+                    <p>
+                        Esta aplicación web es una herramienta interactiva que 
+                        permite a los usuarios realizar cálculos relacionados 
+                        con el MRU y MRUV de manera sencilla y rápida. Los usuarios 
+                        pueden ingresar datos como la velocidad inicial, la velocidad 
+                        final, la aceleración, el tiempo y la posición inicial. 
+                        La aplicación utiliza fórmulas matemáticas para calcular 
+                        parámetros como la distancia recorrida, la velocidad final 
+                        y la posición final, dependiendo de la situación de MRU o MRUV..
+                    </p>
+                    <ul>
+                        <li>Movimiento rectilino uniforme (MRU)</li>
+                        <li>Movimiento rectilinio uniformemente variado (MRUV)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="tecnologia">
+                <button class="subtitulo"><span></span>TECNOLOGIA USADO</button>
+                <div class="infoAdicional">
+                    <ul>
+                        <li>
+                            <h4>Javascript</h4>
+                            <p>
+                                La aplicación web se ha desarrollado 
+                                utilizando JavaScript, lo que la hace 
+                                altamente interactiva y fácil de usar. 
+                                Los usuarios pueden ingresar los valores 
+                                necesarios en campos de entrada y la 
+                                aplicación calculará automáticamente 
+                                los resultados en tiempo real. Además, 
+                                para hacerla accesible a una audiencia 
+                                más amplia, se ha implementado en GitHub 
+                                Pages, lo que significa que los usuarios 
+                                pueden acceder a ella a través de un 
+                                navegador web sin necesidad de descargar 
+                                ni instalar ninguna aplicación.
+                            </p>
+                            <ul>
+                                <li>
+                                    <h5>Aceso directo a la pagina: <a class="links" href="https://george-mvq.github.io/Tarea_2do_Parcial_DW/">Calculadora MRU Y MRUV</a></h5>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </article>
+
+    {{>footer}}
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

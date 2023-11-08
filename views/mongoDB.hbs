@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/barraDisposicion.css">
+        <link rel="stylesheet" href="assets/css/estiloProyectos.css">
+        <script src="assets/js/despliegue.js"></script>
+        <title>{{titulo}}</title>
+    </head>
+
+    <body>
+        {{>header}}
+        {{>navbar}}
+        <article class="articulo">
+            <h1>{{proyecto}}</h1>
+            <section id="contenedor">
+                <div class="contenedor__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NFMvmvKHdYU?si=x5U5FntRkYN-IqAL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <section class="section__descripcion">
+                    <button class="subtitulo"><span></span>DESCRIPCION</button>
+
+                    <div class="infoAdicional">
+                        <p>
+                            Esta aplicación realizado con mongodb, nodesJs y
+                            expresss no permite visualizar la conexion a la base
+                            de datos, en ester apartado
+                            podremos visualizar cuatro principales
+                            funcionalidades, las cuales son:
+                        </p>
+
+                        <ol>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h4>Comprovar la conexion a la base de
+                                            datos (ejercicio 78): </h4>
+                                        <p>
+                                            El ejercicio debe comenzar
+                                            estableciendo una conexión con la
+                                            base
+                                            de datos MongoDB utilizando Node.js
+                                            y la biblioteca oficial de
+                                            MongoDB, como mongoose. Esto implica
+                                            configurar la conexión con la
+                                            URL de la base de datos y manejar
+                                            los eventos de conexión y error
+                                            para verificar que la conexión se
+                                            establece correctamente.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <h4>Inserción de datos en la colección
+                                            (Ejercicio 79):</h4>
+                                        <p>
+                                            Se implementa la funcionalidad para
+                                            insertar datos en la colección
+                                            "usuarios" de MongoDB. Esto se logra
+                                            mediante una ruta de API que acepta
+                                            solicitudes HTTP POST. Los datos a
+                                            insertar se envían en el cuerpo
+                                            (body) de
+                                            la solicitud, en formato JSON. Esta
+                                            insercion se realiza mediante la
+                                            herramienta
+                                            Thunder que nos permite realizar
+                                            solicitudes de prueba a esta ruta.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <h4>Encriptación de contraseña y lógica
+                                            de validación de campos: (Ejercicio
+                                            710) </h4>
+                                        <p>
+                                            En este apartado se implementa
+                                            validaciones antes de insertar los
+                                            datos del usuario en la colección,
+                                            por lo que se debe implementar la
+                                            lógica de encriptación de la
+                                            contraseña del usuario. Esto implica
+                                            utilizar una
+                                            biblioteca de encriptación, como
+                                            "bcrypt", para almacenar las
+                                            contraseñas de manera
+                                            segura en la base de datos. Además,
+                                            se debe realizar la validación de
+                                            los campos del
+                                            usuario, como el nombre de usuario,
+                                            el correo electrónico, etc., para
+                                            garantizar que
+                                            los datos sean correctos antes de la
+                                            inserción.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <h4> Creacion de una colocciones - roles
+                                            (Ejericicio 711): </h4>
+                                        <p>
+                                            Para esta seccion se crea una
+                                            colección llamada "ROLES" en la base
+                                            de datos
+                                            MongoDB. Esto se realiza utilizando
+                                            el mismo código de Node.js
+                                            que se utiliza para establecer la
+                                            conexión a la base de datos. La
+                                            colección "ROLES" contendrá
+                                            información sobre los roles de
+                                            usuario,
+                                            como "administrador",
+                                            "usuario estándar", etc. Cuando se
+                                            crea un nuevo
+                                            usuario, se asigna un rol basado en
+                                            esta colección.
+                                        </p>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="tecnologia">
+                    <button class="subtitulo"><span></span>TECNOLOGIA USADO</button>
+                    <div class="infoAdicional">
+
+                        <ul>
+                            <li>
+                                <h4>NODE JS </h4>
+                                <p>
+                                    Es un entorno de ejecución de JavaScript que
+                                    permite construir
+                                    aplicaciones del lado del servidor. Node.js
+                                    es ampliamente utilizado
+                                    para desarrollar aplicaciones web y
+                                    proporciona una base para ejecutar
+                                    código JavaScript en el servidor.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>MongoDB:</h4>
+                                <p>
+                                    Es una base de datos NoSQL que almacena
+                                    datos en un formato de documento BSON.
+                                    MongoDB es escalable y flexible, lo que lo
+                                    hace adecuado para una variedad de
+                                    aplicaciones, incluyendo aplicaciones web.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Express: </h4>
+                                <p>
+                                    Es un marco de aplicación web para Node.js
+                                    que simplifica la creación de
+                                    rutas, manejo de solicitudes y respuestas, y
+                                    la construcción de API REST.
+                                    Express es ampliamente utilizado en el
+                                    desarrollo de aplicaciones web con Node.js.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>CORS (Cross-Origin Resource Sharing):</h4>
+                                <p>
+                                    Es una biblioteca que permite el intercambio
+                                    de recursos entre dominios o sitios web en
+                                    un navegador.
+                                    CORS es importante en aplicaciones web para
+                                    gestionar solicitudes y respuestas entre
+                                    diferentes
+                                    orígenes.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Dotenv:</h4>
+                                <p>
+                                    Es una biblioteca que facilita la gestión de
+                                    variables de entorno en aplicaciones
+                                    Node.js.
+                                    Permite configurar y cargar variables de
+                                    entorno desde un archivo .env, lo que es
+                                    útil para
+                                    mantener configuraciones sensibles separadas
+                                    del código fuente.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>bcryptjs:</h4>
+                                <p>
+                                    Es una biblioteca utilizada para el cifrado
+                                    seguro de contraseñas. Es comúnmente
+                                    utilizada en aplicaciones web para almacenar
+                                    contraseñas de usuarios de manera segura en
+                                    la base de datos, utilizando técnicas de
+                                    hashing.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Express-Validator:</h4>
+                                <p>
+                                    Es una biblioteca que facilita la validación
+                                    de datos de entrada en las solicitudes HTTP.
+                                    Permite definir reglas de validación para
+                                    campos como correos electrónicos,
+                                    contraseñas, números, etc., antes de
+                                    procesar la información.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Mongoose:</h4>
+                                <p>
+                                    Es una biblioteca de modelado de objetos
+                                    para MongoDB en Node.js. Simplifica la
+                                    interacción con la base de datos MongoDB al
+                                    proporcionar una capa de abstracción que
+                                    permite definir esquemas de datos y
+                                    modelarlos en la aplicación.
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+            </section>
+        </article>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous">
+        </script>
+        {{>footer}}
+
+    </body>
+
+</html>

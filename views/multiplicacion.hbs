@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/barraDisposicion.css">
+        <link rel="stylesheet" href="assets/css/estiloProyectos.css">
+        <script src="assets/js/despliegue.js"></script>
+        <title>{{titulo}}</title>
+    </head>
+
+    <body>
+        {{>header}}
+        {{>navbar}}
+        <article class="articulo">
+            <h1>{{proyecto}}</h1>
+            <section id="contenedor">
+                <div class="contenedor__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NFMvmvKHdYU?si=x5U5FntRkYN-IqAL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <section class="section__descripcion">
+                    <button class="subtitulo"><span></span>DESCRIPCION</button>
+
+                    <div class="infoAdicional">
+                        <p>
+                            Esta aplicación de consola en JavaScript y NodeJs permite a los usuarios generar
+                             tablas de multiplicar con una serie de funcionalidades:
+                        </p>
+
+                        <ol>
+                           <li> 
+                              <h4>Parametros de linea de comandos: </h4>
+                              <ul>
+                                 <li> 
+                                    <h5>-b, --base:</h5> 
+                                    <p> 
+                                       Permite al usuario especificar la base de la multiplicación, 
+                                       es decir, el número del cual se generarán las tablas de multiplicar.
+                                    </p>
+                                 </li>
+
+                                 <li>
+                                    <h5>-h, --hasta:</h5>
+                                    <p>
+                                       Define hasta qué número se mostrarán los resultados de la multiplicación.
+                                    </p>
+                                 </li>
+
+                                 <li>
+                                    <h5>-l, --listar: </h5>
+                                    <p> 
+                                       Esta opción permite listar los resultados en la consola en 
+                                       lugar de solo mostrar el resultado final.
+                                    </p>
+                                 </li>
+
+                                 <li>
+                                    <h5>-g, --guardar: </h5>
+                                    <p>
+                                       Permite especificar una ubicación donde guardar la tabla de multiplicar 
+                                       generada en un archivo de texto plano.
+                                    </p>
+                                 </li>
+
+                              </ul>
+                           </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="tecnologia">
+                    <button class="subtitulo"><span></span>TECNOLOGIA USADO</button>
+                    <div class="infoAdicional">
+
+                        <ul>
+                            <li>
+                                <h4>NODE JS </h4>
+                                <p>
+                                   Node.js permite ejecutar JavaScript en el lado del servidor, por lo que fue muy esencial para desarrollar la aplicacion de consola.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>YARGS:</h4>
+                                <p>
+                                     Yargs simplifica la gestión de los parámetros pasados desde la línea de comandos, lo que hace que sea más sencillo personalizar y configurar la aplicación según las preferencias del usuario.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>COLORS: </h4>
+                                <p>Colors es una biblioteca para Node.js que permite agregar colores a la salida en la consola. Esto mejora la estética visual y facilita la identificación de elementos clave en los resultados, lo que es especialmente útil en aplicaciones de consola interactivas.</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </article>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous">
+        </script>
+        {{>footer}}
+
+    </body>
+
+</html>
